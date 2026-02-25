@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Page_2.MainPage">
+
+    <ScrollView>
+        <FlexLayout
+            
+            Direction="Row" 
+            Wrap="Wrap" 
+            JustifyContent="SpaceAround" 
+            AlignItems="Center"
+            Padding="10"
+            BindableLayout.ItemsSource="{Binding Items}">
+
+            <!-- Example static children -->
+            <Label Text="Item 1" BackgroundColor="LightBlue" Padding="10"/>
+            <Label Text="Item 2" BackgroundColor="LightGreen" Padding="10"/>
+            <Label Text="Item 3" BackgroundColor="LightPink" Padding="10"/>
+            <Label Text="Item 4" BackgroundColor="LightYellow" Padding="10"/>
+            <Label Text="Item 5" BackgroundColor="LightCoral" Padding="10"/>
+
+        </FlexLayout>
+
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Entry
+                x:Name="foodEntry"
+                FlexLayout.AlignSelf="Auto"
+                Placeholder="Enter your food of choice"
+                PlaceholderColor="LightGray"
+                BackgroundColor="Gray"               
+                />
+
+
+
+            <ImageButton 
+                Source="friedchicken14.jpeg"
+                Clicked="OnImageButtonClicked"
+                FlexLayout.AlignSelf="Auto"
+                HeightRequest="100" 
+                WidthRequest="110"
+                />
+
+
+
+            <Button 
+                FlexLayout.AlignSelf="Auto"
+                x:Name="submitFood"
+                Text="Submit" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnSubmitClicked"
+                Margin="0,10,0,0"
+                HorizontalOptions="Fill"
+                HeightRequest="38" 
+                WidthRequest="110"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
