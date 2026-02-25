@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="Page_2.AppShell"
+    x:Class="Page_3.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Page_2"
+    xmlns:local="clr-namespace:Page_3"
     Shell.FlyoutBehavior="Disabled"
-    Title="Page_2">
+    Title="Page_3">
 
     <ShellContent
         Title="Home"
